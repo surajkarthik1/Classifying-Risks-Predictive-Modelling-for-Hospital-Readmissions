@@ -8,7 +8,7 @@ This repository hosts a predictive modeling project aimed at forecasting hospita
 
 The dataset features 101,766 instances, each representing a hospital visit by a diabetic patient. It includes comprehensive data across 50 features such as demographics (race, gender, age), medical details (number of lab procedures, diagnoses, medication changes), and the target variable, which indicates whether a patient was readmitted within 30 days, after 30 days, or not readmitted.
 
-### Exploratory Data Analysis (EDA):
+## Exploratory Data Analysis (EDA):
 
 Initial data exploration involved:
 
@@ -24,7 +24,7 @@ Initial data exploration involved:
 
 * Encoding of categorical variables to numeric forms suitable for machine learning models.
 
-### Model Development:
+## Model Development:
 
 Several predictive models were evaluated for their effectiveness in predicting readmissions:
 
@@ -36,7 +36,7 @@ Several predictive models were evaluated for their effectiveness in predicting r
 
  XGBoost emerged as the most effective model, achieving an accuracy of 64% based on the given metrics.
 
-### Evaluation and Results:
+## Evaluation and Results:
 
 The model's performance was critically assessed using various metrics, including accuracy, precision, recall, F1-score, and AUC-ROC curve. These metrics helped in fine-tuning the model parameters and selecting the best model for deployment.
 
