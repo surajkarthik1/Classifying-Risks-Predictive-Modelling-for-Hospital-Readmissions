@@ -1,29 +1,43 @@
 # Classifying-Risks-Predictive-Modelling-for-Hospital-Readmissions
 
 Overview:
-This repository contains the implementation of a machine learning model to predict hospital readmissions for diabetic patients. The analysis is based on data from the UC Irvine Machine Learning Repository and involves various machine learning techniques to identify key factors influencing readmission rates.
+This repository hosts a predictive modeling project aimed at forecasting hospital readmissions among diabetic patients. The project utilizes data from the UC Irvine Machine Learning Repository, applying various advanced machine learning algorithms to uncover the primary drivers behind patient readmissions.
 
 Dataset:
-The dataset comprises 101,766 patient records with 50 features, focusing on demographic details, patient medical history, and the outcome of hospital visits. Key attributes include patient number, race, gender, age, weight, admission details, diagnostic codes, and readmission status.
+The dataset features 101,766 instances, each representing a hospital visit by a diabetic patient. It includes comprehensive data across 50 features such as demographics (race, gender, age), medical details (number of lab procedures, diagnoses, medication changes), and the target variable, which indicates whether a patient was readmitted within 30 days, after 30 days, or not readmitted.
 
-Exploratory Data Analysis (EDA):
-The initial phase involved cleaning the dataset, handling missing values particularly in the 'weight' feature, and performing exploratory data analysis to understand the distribution and relationship of features.
+Exploratory Data Analysis (EDA)
 
-Feature Engineering:
-We conducted feature engineering to transform and create new features to better represent the underlying processes affecting readmissions, which includes encoding categorical variables and imputing missing values using a Random Forest Regressor.
+Initial data exploration involved:
 
-Model Building:
-We experimented with several machine learning models:
+-> Cleaning the dataset by addressing missing values, especially in the 'weight' and 'medical specialty' categories.
 
-1. Logistic Regression
-2. Naive Bayes
-3. K-Nearest Neighbors (KNN)
-4. Decision Trees
-5. Ensemble methods like Random Forest and XGBoost
-6. The XGBoost model performed the best with an accuracy of 64%.
+-> Analyzing feature distributions and relationships using visualizations to understand the data better and prepare it for modeling.
 
-Results:
-The final model provides insights into the likelihood of a patient being readmitted based on their medical history and current hospital stay. These predictions can help healthcare providers improve patient care and reduce unnecessary readmissions.
+Feature Engineering
+
+-> Imputation of missing values in 'weight' using a Random Forest algorithm based on related features like 'age' and 'race'.
+
+-> Transformation of skewed numerical features to reduce variance and improve model accuracy.
+
+-> Encoding of categorical variables to numeric forms suitable for machine learning models.
+
+Model Development
+
+Several predictive models were evaluated for their effectiveness in predicting readmissions:
+
+1. Logistic Regression: Served as a baseline for performance comparison.
+2. Naive Bayes: Tested for its simplicity and speed in model training.
+3. K-Nearest Neighbors (KNN): Utilized for its efficacy in capturing the complexity of datasets through instance-based learning.
+4. Decision Trees and Random Forests: Employed for their ability to handle non-linear data and provide feature importance estimates.
+5. XGBoost: Chosen for its outstanding performance on structured data and its ability to handle large datasets efficiently.
+
+ XGBoost emerged as the most effective model, achieving an accuracy of 64% based on the given metrics.
+
+Evaluation and Results:
+The model's performance was critically assessed using various metrics, including accuracy, precision, recall, F1-score, and AUC-ROC curve. These metrics helped in fine-tuning the model parameters and selecting the best model for deployment.
+
+
 
 
 
