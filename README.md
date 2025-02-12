@@ -1,12 +1,14 @@
 # Classifying-Risks-Predictive-Modelling-for-Hospital-Readmissions
 
-Overview
+Overview:
+
 This repository contains the implementation of a machine learning model to predict hospital readmissions for diabetic patients. The analysis is based on data from the UC Irvine Machine Learning Repository and involves various machine learning techniques to identify key factors influencing readmission rates.
 
-Dataset
+Dataset:
+
 The dataset comprises 101,766 patient records with 50 features, focusing on demographic details, patient medical history, and the outcome of hospital visits. Key attributes include patient number, race, gender, age, weight, admission details, diagnostic codes, and readmission status.
 
-Exploratory Data Analysis (EDA)
+Exploratory Data Analysis (EDA):
 The initial phase involved cleaning the dataset, handling missing values particularly in the 'weight' feature, and performing exploratory data analysis to understand the distribution and relationship of features.
 
 Feature Engineering
